@@ -62,9 +62,9 @@ Si ves estas carpetas, ¡las librerías están instaladas correctamente!
 1. Abre Arduino IDE
 2. Archivo → Preferencias
 3. En "URL adicionales de gestor de placas", agrega:
-   \`\`\`
+   ```
    http://arduino.esp8266.com/stable/package_esp8266com_index.json
-   \`\`\`
+   ```
 4. Haz clic OK
 5. Espera a que se actualice
 
@@ -102,11 +102,11 @@ Si el Wemos no aparece en "Herramientas → Puerto", necesitas el driver:
 2. Ejecuta el instalador .pkg
 
 **Linux:**
-\`\`\`bash
+```bash
 # Por lo general, el driver está incluido. Si no:
 sudo usermod -a -G dialout $USER
 # Desconecta/conecta el dispositivo USB
-\`\`\`
+```
 
 ### Para Arduino UNO (generalmente no necesario)
 
@@ -128,9 +128,9 @@ Si tu Arduino UNO no aparece, descarga los drivers desde arduino.cc
 ### Linux
 1. Conecta Arduino por USB
 2. Terminal:
-   \`\`\`bash
+   ```bash
    ls /dev/tty*
-   \`\`\`
+   ```
 3. Busca ttyUSB0 o ttyACM0
 
 ## 7. Primer Test - Blink LED
