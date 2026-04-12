@@ -76,7 +76,7 @@
 - Compilación: con Turbo
 
 ### Librerías
-\`\`\`
+```
 Arduino:
 - DHT.h (Adafruit) - lectura DHT22
 - Adafruit_BMP280.h - lectura BMP280
@@ -89,7 +89,7 @@ Wemos:
 - ESP8266WebServer.h - servidor HTTP
 - ArduinoJson.h - parseo JSON
 - todos los anteriores soportados
-\`\`\`
+```
 
 ## Comunicación
 
@@ -101,9 +101,9 @@ Wemos:
 - Longitud máxima JSON: 256 bytes
 
 ### JSON Transmitido
-\`\`\`json
+```json
 {"temp":23.5,"hum":45,"pres":1013,"luz":450}
-\`\`\`
+```
 
 Campos:
 - `temp` (float): Temperatura °C
@@ -120,7 +120,7 @@ Campos:
   - 404 → Error para rutas no encontradas
 
 ### Respuesta /datos
-\`\`\`json
+```json
 {
   "temp": 23.5,
   "hum": 45,
@@ -128,7 +128,7 @@ Campos:
   "luz": 450,
   "timestamp": 1234567890
 }
-\`\`\`
+```
 
 ## Consumo Energético
 
