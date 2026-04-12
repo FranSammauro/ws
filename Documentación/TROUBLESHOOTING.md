@@ -54,9 +54,9 @@
 **Solución:**
 1. Verifica que BMP280 esté en I2C (A4 SDA, A5 SCL)
 2. Prueba cambiar dirección I2C en código:
-   \`\`\`cpp
+   ```cpp
    if (!bmp.begin(0x77)) { // Intenta 0x77 en lugar de 0x76
-   \`\`\`
+   ```
 3. Agrega resistencias pull-up 10kΩ en SDA y SCL (opcional)
 4. Verifica conexión a 3.3V (no 5V)
 
@@ -92,10 +92,10 @@
 **Soluciones en orden:**
 
 1. **Verifica credenciales exactas:**
-   \`\`\`cpp
+   ```cpp
    const char* ssid = "Red_Colegio";      // Sensible a mayúsculas
    const char* password = "Contraseña";   // Sensible a mayúsculas
-   \`\`\`
+   ```
 
 2. **Prueba con hotspot de celular:**
    - Si funciona con hotspot pero no con WiFi del colegio
@@ -108,10 +108,10 @@
    - Asegúrate de conectar a la banda 2.4 GHz
 
 4. **Aumenta espera de conexión:**
-   \`\`\`cpp
+   ```cpp
    int intentos = 0;
    while (WiFi.status() != WL_CONNECTED && intentos < 50) { // Aumenta 50
-   \`\`\`
+   ```
 
 ### No puedo acceder a la página web
 
@@ -220,9 +220,9 @@
 **Si se actualiza cada 30+ segundos:**
 1. Verifica conexión Arduino-Wemos
 2. En Wemos, reduce velocidad actualización:
-   \`\`\`javascript
+   ```javascript
    setInterval(actualizarDatos, 1000); // Cada 1 segundo
-   \`\`\`
+   ```
 
 ### Página no tiene estilos (se ve fea)
 
