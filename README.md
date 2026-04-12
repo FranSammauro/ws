@@ -35,7 +35,7 @@ Proyecto de estación meteorológica autónoma. Captura datos ambientales en tie
 
 ## Estructura del Proyecto
 
-\`\`\`
+```
 estacion-meteorologica/
 ├── Arduino/
 │   └── estacion_meteorologica.ino         # Código principal Arduino
@@ -49,7 +49,7 @@ estacion-meteorologica/
 │   └── ESPECIFICACIONES.md                # Datos técnicos
 ├── README.md                              # Este archivo
 └── LICENSE                                # Licencia MIT
-\`\`\`
+```
 
 ## Instalación Rápida
 
@@ -68,7 +68,7 @@ En Arduino IDE → Herramientas → Gestionar librerías, busca e instala:
 
 ### 3. Cargar código en Arduino UNO
 
-- Abre `Arduino/estacion_meteorologica.ino`
+- Abre ```Arduino/estacion_meteorologica.ino```
 - Selecciona Herramientas → Placa → Arduino UNO
 - Conecta Arduino por USB
 - Carga el código (Ctrl+U)
@@ -77,9 +77,9 @@ En Arduino IDE → Herramientas → Gestionar librerías, busca e instala:
 
 - Abre Arduino IDE → Archivo → Preferencias
 - En "URL adicionales de gestor de placas" agrega:
-  \`\`\`
+  ```
   http://arduino.esp8266.com/stable/package_esp8266com_index.json
-  \`\`\`
+  ```
 - Herramientas → Gestor de placas → Busca "ESP8266" → Instala
 - Selecciona Herramientas → Placa → "LOLIN(WEMOS) D1 Mini (ESP8266)"
 - Selecciona Herramientas → Puerto → (tu puerto COM)
@@ -122,9 +122,9 @@ Ver archivo `Documentación/CONEXIONES.md` para esquema detallado.
 
 El Arduino envía datos en este formato cada 10 segundos:
 
-\`\`\`json
+```json
 {"temp":23.7,"hum":48,"pres":1012,"luz":320}
-\`\`\`
+```
 
 - `temp`: Temperatura en °C (decimal)
 - `hum`: Humedad relativa en % (entero)
@@ -139,7 +139,7 @@ Devuelve la página HTML principal con la interfaz completa.
 ### GET /datos
 Devuelve JSON con los últimos valores medidos:
 
-\`\`\`json
+```json
 {
   "temp": 23.7,
   "hum": 48,
@@ -147,7 +147,7 @@ Devuelve JSON con los últimos valores medidos:
   "luz": 320,
   "timestamp": 1234567890
 }
-\`\`\`
+```
 
 ## Solución de Problemas
 
