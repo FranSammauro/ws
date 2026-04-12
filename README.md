@@ -1,7 +1,14 @@
 # Estación Meteorológica con Arduino + Wemos D1 Mini
 
 Proyecto de estación meteorológica autónoma. Captura datos ambientales en tiempo real y los muestra en una página web accesible desde una red local.
-
+<br>
+<img style="width: 350px" src=Documentación/Image1.jpeg>
+<img style="width: 350px" src=Documentación/Image2.jpeg>
+<br>
+Datos en tiempo real:
+<br>
+<img src="Documentación/Image3.jpeg">
+<br>
 ## Características
 
 - Medición de temperatura, humedad, presión atmosférica y luminosidad
