@@ -7,7 +7,7 @@ Proyecto de estación meteorológica autónoma. Captura datos ambientales en tie
 <br>
 Datos en tiempo real:
 <br>
-<img src="Documentación/Image3.jpeg">
+<img style="width: 700px" src="Documentación/Image3.png">
 <br>
 ## Características
 
